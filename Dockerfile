@@ -1,11 +1,10 @@
 FROM fedora:latest
 
-RUN dnf update &&
-    dnf install --assumeyes \
+RUN dnf install --assumeyes \
     nano \
     curl \
     vim \
-    gcc \
+    g++ \
     htop \
     make \
     cmake \
@@ -15,7 +14,11 @@ WORKDIR /Whispr
 
 COPY . .
 
-RUN mkdir build/ && cd build/ && cmake .. && make && cd ..
+RUN mkdir build/ \
+&& cd build/ \
+&& CMAKE_CXX_COMPILER="usr/bin/g++" \
+&& cmake .. \
+&& make
 
 EXPOSE 8080
 
