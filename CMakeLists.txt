@@ -11,11 +11,11 @@ project(Whispr
 
 set(SOURCES
   src/whispr_server.cpp
-  src/server_socket.cpp
+  src/socket.cpp
 )
 
 set(HEADERS
-  include/server_socket.h
+  include/socket.h
 )
 
 add_executable(whispr ${SOURCES} ${HEADERS})
