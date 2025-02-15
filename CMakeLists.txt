@@ -9,6 +9,7 @@ project(Whispr
     LANGUAGES CXX
     )
 
+
 add_executable(whispr
     src/whispr_server.cpp
     )
