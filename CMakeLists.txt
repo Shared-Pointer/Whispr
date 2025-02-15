@@ -10,5 +10,5 @@ project(Whispr
     )
 
 add_executable(whispr
-    src/whispr.cpp
+    src/whispr_server.cpp
     )
