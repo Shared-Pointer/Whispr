@@ -1,11 +1,13 @@
 #include "../include/server_socket.h"
+#include <iostream>
 
-class Socket {
-public:
-  Socket(){
+Socket::Socket()
+{
+  std::cout << "witom\n"; 
+}
 
-  };
-  ~Socket(){
+Socket::~Socket()
+{
+  std::cout << "zegnom\n";
+}
 
-  };
-};
