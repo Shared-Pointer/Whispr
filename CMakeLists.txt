@@ -5,7 +5,7 @@ set (CMAKE_CXX_STANDARD_REQUIRED 20)
 
 project(Whispr
     VERSION 1.0
-    DESCRIPTION "Communicator"
+    DESCRIPTION "Whispr communicator"
     LANGUAGES CXX
     )
 
