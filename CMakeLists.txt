@@ -11,7 +11,7 @@ project(Whispr
     )
 
 set(SOURCES
-  src/whispr_server.cpp
+  src/main.cpp
   src/socket.cpp
 )
 

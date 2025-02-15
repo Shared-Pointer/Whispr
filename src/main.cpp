@@ -1,7 +1,6 @@
 #include "../include/socket.h"
 
 int main() {
-    Socket();
-
+    Socket socket;
     return 0;
 }
