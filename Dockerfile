@@ -1,4 +1,4 @@
-FROM ubunut
+FROM fedora:latest
 
 RUN dnf update &&
     dnf install --assumeyes \
