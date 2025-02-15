@@ -9,7 +9,13 @@ project(Whispr
     LANGUAGES CXX
     )
 
+set(SOURCES
+  src/whispr_server.cpp
+  src/server_socket.cpp
+)
 
-add_executable(whispr
-    src/whispr_server.cpp
-    )
+set(HEADERS
+  include/server_socket.h
+)
+
+add_executable(whispr ${SOURCES} ${HEADERS})
