@@ -14,11 +14,11 @@ WORKDIR /Whispr
 
 COPY . .
 
-#RUN mkdir build/ \
-#&& cd build/ \
-#&& CMAKE_CXX_COMPILER="usr/bin/g++" \
-#&& cmake .. \
-#&& make
+RUN mkdir build/ \
+&& cd build/ \
+&& CMAKE_CXX_COMPILER="usr/bin/g++" \
+&& cmake .. \
+&& make
 
 EXPOSE 8080
 
