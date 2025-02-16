@@ -1,5 +1,5 @@
-#ifndef SERVER_SOCKET_H
-#define SERVER_SOCKET_H
+#ifndef SOCKET_H
+#define SOCKET_H
 
 #include <arpa/inet.h>
 #include <netdb.h>
